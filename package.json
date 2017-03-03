@@ -43,5 +43,5 @@
     "browserify": "^14.0.0",
     "faker": "^4.1.0"
   },
-  "homepage": "http://damianmcnulty.github.io/patternlab-react-demp/style-guide"
+  "homepage": "http://damianmcnulty.github.io/patternlab-react-demo/public"
 }
