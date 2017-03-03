@@ -19,7 +19,7 @@ npm run create-basic
 
 ## Create a copy of the Pattern Lab demo theme
 
-[Live demo](http://patternlab.gaulton.me/style-guide)
+[Live demo](http://damianmcnulty.github.io/patternlab-react-demo/style-guide)
 ```
 npm run create-full
 ```
