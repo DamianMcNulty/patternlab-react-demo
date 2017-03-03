@@ -3,7 +3,7 @@ import {Link} from 'react-router'
 
 export const getNavLink = (linkUrl, children, props) => {
     props = {
-        ...props,
+        props,
         children
     }
 

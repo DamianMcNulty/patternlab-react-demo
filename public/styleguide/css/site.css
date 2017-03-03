@@ -1,0 +1,146 @@
+.sg-page-wrap {
+  padding-top: 2em;
+}
+/*------------------------------------*\ #BANNER
+\*------------------------------------*/
+/** Banner 1) Wrapper containing the main heading of the page  */
+.banner {
+  background: #222;
+  position: relative;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+@media all and (min-width: 34em) {
+  .banner {
+    height: 40vh;
+  }
+}
+/** Banner Title  1) Heading within the banner */
+.banner__title {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 2rem 1rem;
+  color: #f1f1f1;
+}
+.banner--feature .banner__title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+@media all and (min-width: 34em) {
+  .banner--feature .banner__title {
+    font-size: 4rem;
+  }
+}
+@media all and (min-width: 34em) {
+  .banner__title {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+}
+/** Banner Feature */
+.banner--feature {
+  flex-direction: column;
+  height: auto;
+}
+@media all and (min-width: 36em) {
+  .banner--feature {
+    height: 70vh;
+  }
+}
+@media all and (min-width: 60em) {
+  .banner--feature {
+    flex-direction: row;
+  }
+}
+.banner__title.banner-center {
+  justify-content: center;
+}
+/** 2-up Grid */
+@media all and (min-width: 34em) {
+  .g--2up {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .g--2up > .gi {
+    width: 50%;
+    display: flex;
+  }
+}
+/*------------------------------------*\ #TILE
+\*------------------------------------*/
+.tile {
+  background: #f1f1f1;
+  padding: 2rem;
+  /** Alternative Tile Style 1 */
+  /** Alternative Tile Style 2 */
+  /** Alternative Tile Style Fancy */
+  /**
+	 * Alternative Tile Style Fancy 2
+	 */
+  /** Alternative Tile Style Flexible (Fill Up Remaining Space) */
+}
+.tile--alt {
+  background: #e5e5e5;
+}
+.tile--flex {
+  flex: 1;
+}
+.tile.tile-center {
+  justify-content: center;
+}
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  max-width: 100%;
+  padding: 0 0.5em;
+}
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sg-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.sg-colors li {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  padding: 0.3em;
+  margin: 0 0.5em 0.5em 0;
+  min-width: 5em;
+  max-width: 14em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.sg-swatch {
+  display: block;
+  height: 4em;
+  margin-bottom: 0.3em;
+  border-radius: 5px;
+}
+.sg-label {
+  font-size: 90%;
+  line-height: 1;
+}
+.sg-pattern-example {
+  margin-bottom: 1rem;
+}

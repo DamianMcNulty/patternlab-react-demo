@@ -6,14 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-basic": "rm -rf build; babel src-basic --presets=babel-preset-es2015,react --plugins=transform-object-rest-spread --out-dir=build",
-    "build-full": "rm -rf build; babel src-full --presets=babel-preset-es2015,react --plugins=transform-object-rest-spread --out-dir=build",
+    "build-full": "babel-node src-full/ --presets=babel-preset-es2015,react --plugins=transform-object-rest-spread --out-dir=build",
     "sm": "node -e 'require(\"@peteyg/patternlab-react\").generateSourcemap()'",
     "push-basic": "rm -rf public/*; cp -r src-basic/public/* public",
     "push-full": "rm -rf public/*; cp -r src-full/public/* public",
     "bundle": "browserify build/app.js -o public/app.js",
     "bundle-server": "browserify build/server.js --bare -o server.js",
     "create-basic": "npm run build-basic; npm run sm; npm run push-basic; npm run bundle",
-    "create-full": "npm run build-full; npm run sm; npm run push-full; cp -r src-full/app/data build/app; npm run bundle; npm run bundle-server"
+    "create-full": "npm run build-full; npm run sm; npm run push-full; cp -r src-full/app/data build/app; npm run bundle; npm run bundle-server",
+    "start": "babel-node src-full/server.js --presets=react,babel-preset-es2015",
+    "startbasic": "babel-node src-basic/app.js --presets=react,babel-preset-es2015"
   },
   "repository": {
     "type": "git",
@@ -40,5 +42,6 @@
     "babel-preset-react": "^6.22.0",
     "browserify": "^14.0.0",
     "faker": "^4.1.0"
-  }
+  },
+  "homepage": "http://damianmcnulty.github.io/patternlab-react-demp/style-guide"
 }
